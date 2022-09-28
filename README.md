@@ -1,2 +1,17 @@
-# Dining-Penguins
-Famous problem of Dining philosophers but with penguins
+<article class="markdown-body entry-content container-lg" itemprop="text"><h1 dir="auto"><a id="user-content-dining-penguins" class="anchor" aria-hidden="true" href="#dining-penguins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dining Penguins</h1>
+<p dir="auto">In this problem, we are trying to simulate dining penguins. 4 penguins are sitting at the table, ready to eat their dinner. As you might know, penguin's habits are unusual: Each penguin needs exactly 2 forks to eat, but they have only 4 forks at the table.</p>
+<h4 id="user-content-simulation" dir="auto"><a id="user-content-simulation" class="anchor" aria-hidden="true" href="#simulation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Simulation</h4>
+<p dir="auto">Penguins do not wait for each other to eat, they start dining simultaneously, that's why we use <code>Thread</code>s.</p>
+<ul dir="auto">
+<li>Each penguin checks if there's a free fork on the table.</li>
+<li>If there's any free fork penguin takes it and waits 1 second before taking another. If not, the penguin waits 0.5 seconds before checking free forks again.</li>
+<li>After obtaining 2 forks, the penguin eats and returns both forks to the table.</li>
+</ul>
+<h4 id="user-content-problem" dir="auto"><a id="user-content-problem" class="anchor" aria-hidden="true" href="#problem"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Problem</h4>
+<p dir="auto">If you run the code, you will see that none of the penguins start eating, no matter how long you wait. Your task is to find the problem behind this strange behavior and try to fix it.</p>
+<h4 id="user-content-hint" dir="auto"><a id="user-content-hint" class="anchor" aria-hidden="true" href="#hint"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Hint</h4>
+<p dir="auto">If you are stuck, google "the dining philosophers problem".</p>
+
+
+
+</article>
